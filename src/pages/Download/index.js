@@ -1,15 +1,17 @@
 import React from 'react';
 
-import Layout from '~/layouts/Default';
-
 import { Container, Content } from './styles';
 
 const DownloadPage = () => (
-  <Layout>
-    <Container>
-      <Content>
-        <h1>CORONAVÍRUS MOBILE</h1>
-      </Content>
-    </Container>
-  </Layout>
+  <Container>
+    <Content>
+      <h1>Versão Móvel !</h1>
+      <p>
+        Baixe agora a versão móvel da nova plataforma do coronavírus e fique por
+        dentro de todas informações na palma da sua mão!
+      </p>
+    </Content>
+  </Container>
 );
+
+export default DownloadPage;
