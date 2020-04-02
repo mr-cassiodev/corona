@@ -20,16 +20,16 @@ const HeaderComponent = () => {
       <nav>
         <ul>
           <Navigation>
-            <Link to="/">Mundo</Link>
+            <Link to="/world">Mundo</Link>
           </Navigation>
           <Navigation>
-            <Link to="/">Notícias</Link>
+            <Link to="/news">Notícias</Link>
           </Navigation>
           <Navigation>
-            <Link to="/">Local</Link>
+            <Link to="/local">Local</Link>
           </Navigation>
           <Navigation>
-            <Link to="/">Download</Link>
+            <Link to="/404">Download</Link>
           </Navigation>
         </ul>
       </nav>
