@@ -49,7 +49,7 @@ const HeaderComponent = () => {
       <DownloadContainer>
         <Link to="/download">
           Download App
-          <FiDownload size={20} color="#000" />
+          <FiDownload size={20} />
         </Link>
       </DownloadContainer>
     </Container>

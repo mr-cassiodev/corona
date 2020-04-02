@@ -39,7 +39,6 @@ export const SearchIcon = styled.span`
 export const Input = styled.input`
   height: 60px;
   padding: 0 40px;
-
   color: #000;
   transition: width 400ms;
 
@@ -96,8 +95,20 @@ export const DownloadContainer = styled.div`
   margin-left: 30px;
 
   a {
+    display: flex;
     padding: 12px 20px;
-    color: #000;
-    background-color: #fff;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #fff;
+
+    svg {
+      margin-left: 8px;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 `;
