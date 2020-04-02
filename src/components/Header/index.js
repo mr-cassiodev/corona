@@ -1,38 +1,60 @@
-import React, { useRef } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import { FiSearch } from 'react-icons/fi';
 
-import { Container, Button, Navigation } from './styles';
+import {
+  Container,
+  SearchContainer,
+  SearchIcon,
+  Input,
+  Navigation,
+} from './styles';
 
 const HeaderComponent = () => {
-  const navbarRef = useRef(null);
+  const [inSearch, setInSearch] = useState(false);
 
   function searchNavigation() {
     console.log('opan');
+
+    if (inSearch) {
+      setInSearch(false);
+    } else {
+      setInSearch(true);
+    }
   }
 
   return (
-    <Container ref={navbarRef}>
-      <Button onClick={searchNavigation}>
-        <FiSearch size={30} />
-      </Button>
-      <nav>
+    <Container>
+      <SearchContainer>
+        <SearchIcon>
+          <FiSearch size={30} />
+        </SearchIcon>
+
+        <Input
+          inSearch={inSearch}
+          onFocus={searchNavigation}
+          onBlur={searchNavigation}
+          placeholder="Posso te ajudar ?"
+        />
+      </SearchContainer>
+
+      <Navigation active={!inSearch}>
         <ul>
-          <Navigation>
+          <li>
             <Link to="/">Mundo</Link>
-          </Navigation>
-          <Navigation>
+          </li>
+          <li>
             <Link to="/">Notícias</Link>
-          </Navigation>
-          <Navigation>
+          </li>
+          <li>
             <Link to="/">Local</Link>
-          </Navigation>
-          <Navigation>
+          </li>
+          <li>
             <Link to="/">Download</Link>
-          </Navigation>
+          </li>
         </ul>
-      </nav>
+      </Navigation>
     </Container>
   );
 };

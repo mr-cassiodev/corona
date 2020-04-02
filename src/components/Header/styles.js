@@ -20,54 +20,61 @@ export const Container = styled.header.attrs({
     font-size: 1.8rem;
     font-weight: 600;
   }
-
-  nav {
-    &,
-    ul,
-    li,
-    a {
-      display: flex;
-      height: 100%;
-    }
-  }
 `;
 
-export const Button = styled.button.attrs({
-  className: 'search-button',
-})`
+export const SearchContainer = styled.div`
+  flex: 1;
   display: flex;
-  width: 60px;
-  height: 60px;
-
-  border-radius: 50%;
-
   align-items: center;
-  justify-content: center;
-  transition: background-color 300ms ease-in-out;
 `;
 
-export const Navigation = styled.li`
+export const SearchIcon = styled.span`
+  margin-right: 20px;
+`;
+
+export const Input = styled.input`
+  height: 60px;
+  padding: 0 40px;
+
+  color: #000;
+  transition: width 400ms;
+
+  width: ${(props) => (props.inSearch ? '100%' : '250px')};
+`;
+
+export const Navigation = styled.nav`
   margin: 0 15px;
 
+  display: ${(props) => (props.active ? 'flex' : 'none')};
+
+  ul,
+  li,
   a {
-    position: relative;
-    padding: 0 10px;
+    display: flex;
+    height: 100%;
+  }
 
-    align-items: center;
-    justify-content: center;
+  li {
+    a {
+      position: relative;
+      padding: 0 10px;
 
-    &:before {
-      content: '';
-      position: absolute;
-      width: 0%;
-      height: 3px;
-      bottom: 0;
-      background-color: #b9d6f2;
-      transition: width 400ms;
-    }
+      align-items: center;
+      justify-content: center;
 
-    &:hover:before {
-      width: 100%;
+      &:before {
+        content: '';
+        position: absolute;
+        width: 0%;
+        height: 3px;
+        bottom: 0;
+        background-color: #b9d6f2;
+        transition: width 400ms;
+      }
+
+      &:hover:before {
+        width: 100%;
+      }
     }
   }
 `;
