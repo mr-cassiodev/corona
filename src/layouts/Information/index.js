@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { IoMdArrowRoundBack } from 'react-icons/io';
+import { FiArrowLeft } from 'react-icons/fi';
 
 import { Container, Header, HeaderCredits, Content } from './styles';
 
@@ -10,7 +10,7 @@ const InformationLayout = ({ children }) => (
   <Container>
     <Header>
       <Link to="/">
-        <IoMdArrowRoundBack size={40} />
+        <FiArrowLeft size={40} />
       </Link>
 
       <HeaderCredits>
