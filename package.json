@@ -6,7 +6,11 @@
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint src --ext .js,.jsx",
+    "lint:fix": "eslint src --ext .js,.jsx --fix",
+    "prettier": "prettier --check src/**/*.{js,jsx}",
+    "prettier:fix": "prettier --write src/**/*.{js,jsx}"
   },
   "eslintConfig": {
     "extends": "react-app"

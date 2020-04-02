@@ -8,7 +8,7 @@ export const Container = styled.section`
 
   text-align: center;
 
-  background: linear-gradient(transparent, rgb(0, 0, 0)),
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgb(0, 0, 0)),
     url(${BackgroundImage}) no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -30,23 +30,22 @@ export const Content = styled.div`
     font-size: 5.6rem;
     text-align: center;
   }
-  p {
+  span {
     color: #ed3124;
   }
 `;
 
 export const ButtonsContainer = styled.div`
-  margin-top: 65px;
+  margin-top: 70px;
 
   a {
     padding: 15px 30px;
-    border-radius: 30px;
 
     font-size: 2.2rem;
     font-weight: 600;
 
-    color: #061a40;
-    background-color: #b9d6f2;
+    color: #fff;
+    background-color: #003559;
     box-shadow: 0px 14px 17px 3px rgba(0, 0, 0, 0.4);
     transition: background-color 400ms, box-shadow 500ms;
 
@@ -55,9 +54,9 @@ export const ButtonsContainer = styled.div`
     }
 
     :hover {
-      background-color: #003559;
       box-shadow: 0px 0px 47px -5px rgba(0, 0, 0, 0.38);
-      color: #fcfafa;
+      background-color: #0353a4;
+      border-color: #0353a4;
     }
   }
 `;

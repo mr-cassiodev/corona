@@ -32,7 +32,9 @@ export const Container = styled.header.attrs({
   }
 `;
 
-export const Button = styled.span`
+export const Button = styled.button.attrs({
+  className: 'search-button',
+})`
   display: flex;
   width: 60px;
   height: 60px;
@@ -42,10 +44,6 @@ export const Button = styled.span`
   align-items: center;
   justify-content: center;
   transition: background-color 300ms ease-in-out;
-
-  :hover {
-    background-color: #cbcdd1;
-  }
 `;
 
 export const Navigation = styled.li`
@@ -64,7 +62,7 @@ export const Navigation = styled.li`
       width: 0%;
       height: 3px;
       bottom: 0;
-      background-color: #cbcdd1;
+      background-color: #b9d6f2;
       transition: width 400ms;
     }
 

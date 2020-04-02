@@ -18,6 +18,11 @@ h1 {
   font-size: 2em;
 }
 
+a,
+button {
+  cursor: pointer;
+}
+
 ul,
 li,
 a {
