@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import BackgroundImage from '../../assets/img/background.jpg';
+import BackgroundImage from '../../assets/img/bg.jpg';
 
 export const Container = styled.section`
   height: 100vh;
@@ -30,10 +30,13 @@ export const Content = styled.div`
     font-size: 5.6rem;
     text-align: center;
   }
+  p {
+    color: #ed3124;
+  }
 `;
 
 export const ButtonsContainer = styled.div`
-  margin-top: 80px;
+  margin-top: 65px;
 
   a {
     padding: 15px 30px;
@@ -52,8 +55,9 @@ export const ButtonsContainer = styled.div`
     }
 
     :hover {
-      background-color: #a0bdd9;
+      background-color: #003559;
       box-shadow: 0px 0px 47px -5px rgba(0, 0, 0, 0.38);
+      color: #fcfafa;
     }
   }
 `;

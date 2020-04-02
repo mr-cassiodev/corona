@@ -9,10 +9,10 @@ const HomePage = () => (
   <Layout>
     <Container>
       <Content>
-        <h1>Sobre o CoronaVírus</h1>
+        <h1>CORONAVÍRUS</h1>
+        <p>COVID-19</p>
         <ButtonsContainer>
-          <Link to="/more">Saiba mais</Link>
-          <Link to="/registrations">Pesquise seu estado</Link>
+          <Link to="/registrations">Selecionar Estado</Link>
         </ButtonsContainer>
       </Content>
     </Container>

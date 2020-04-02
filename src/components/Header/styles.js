@@ -44,7 +44,7 @@ export const Button = styled.span`
   transition: background-color 300ms ease-in-out;
 
   :hover {
-    background-color: #071e3d;
+    background-color: #cbcdd1;
   }
 `;
 
@@ -64,7 +64,7 @@ export const Navigation = styled.li`
       width: 0%;
       height: 3px;
       bottom: 0;
-      background-color: #071e3d;
+      background-color: #cbcdd1;
       transition: width 400ms;
     }
 

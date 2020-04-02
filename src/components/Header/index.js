@@ -15,13 +15,16 @@ const HeaderComponent = () => (
     <nav>
       <ul>
         <Navigation>
-          <Link to="/">Item</Link>
+          <Link to="/">Mundo</Link>
         </Navigation>
         <Navigation>
-          <Link to="/">Item</Link>
+          <Link to="/">Notícias</Link>
         </Navigation>
         <Navigation>
-          <Link to="/">Item</Link>
+          <Link to="/">Local</Link>
+        </Navigation>
+        <Navigation>
+          <Link to="/">Download</Link>
         </Navigation>
       </ul>
     </nav>
