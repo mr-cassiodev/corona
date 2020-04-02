@@ -24,7 +24,9 @@ export const Container = styled.header.attrs({
 
 // Search
 
-export const SearchContainer = styled.div`
+export const SearchContainer = styled.div.attrs({
+  className: 'main-header-search-container',
+})`
   flex: 1;
   display: flex;
   align-items: center;

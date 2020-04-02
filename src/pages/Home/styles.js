@@ -19,7 +19,7 @@ export const Content = styled.div`
   display: flex;
   height: 100%;
   width: 100%;
-  max-width: 1280px;
+  max-width: 1024px;
   margin: 0 auto;
 
   flex-direction: column;
