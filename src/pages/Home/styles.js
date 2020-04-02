@@ -45,18 +45,16 @@ export const ButtonsContainer = styled.div`
     font-weight: 600;
 
     color: #fff;
-    background-color: #003559;
+    background-color: #006daa;
     box-shadow: 0px 14px 17px 3px rgba(0, 0, 0, 0.4);
-    transition: background-color 400ms, box-shadow 500ms;
+    transition: filter 400ms;
 
     & + a {
       margin-left: 30px;
     }
 
     :hover {
-      box-shadow: 0px 0px 47px -5px rgba(0, 0, 0, 0.38);
-      background-color: #0353a4;
-      border-color: #0353a4;
+      filter: brightness(80%);
     }
   }
 `;
