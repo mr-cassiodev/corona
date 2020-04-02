@@ -1,28 +1,21 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import { FiSearch } from 'react-icons/fi';
+import { FiSearch, FiDownload } from 'react-icons/fi';
 
 import {
   Container,
   SearchContainer,
+  DownloadContainer,
+  Navigation,
   SearchIcon,
   Input,
-  Navigation,
 } from './styles';
 
 const HeaderComponent = () => {
   const [inSearch, setInSearch] = useState(false);
 
-  function searchNavigation() {
-    console.log('opan');
-
-    if (inSearch) {
-      setInSearch(false);
-    } else {
-      setInSearch(true);
-    }
-  }
+  const inputFocus = () => setInSearch(!inSearch);
 
   return (
     <Container>
@@ -33,8 +26,8 @@ const HeaderComponent = () => {
 
         <Input
           inSearch={inSearch}
-          onFocus={searchNavigation}
-          onBlur={searchNavigation}
+          onFocus={inputFocus}
+          onBlur={inputFocus}
           placeholder="Posso te ajudar ?"
         />
       </SearchContainer>
@@ -42,19 +35,23 @@ const HeaderComponent = () => {
       <Navigation active={!inSearch}>
         <ul>
           <li>
-            <Link to="/">Mundo</Link>
+            <Link to="/world">Mundo</Link>
           </li>
           <li>
-            <Link to="/">Notícias</Link>
+            <Link to="/news">Notícias</Link>
           </li>
           <li>
-            <Link to="/">Local</Link>
-          </li>
-          <li>
-            <Link to="/">Download</Link>
+            <Link to="/local">Local</Link>
           </li>
         </ul>
       </Navigation>
+
+      <DownloadContainer>
+        <Link to="/download">
+          Download App
+          <FiDownload size={20} color="#000" />
+        </Link>
+      </DownloadContainer>
     </Container>
   );
 };

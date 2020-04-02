@@ -13,14 +13,16 @@ export const Container = styled.header.attrs({
   justify-content: space-between;
   align-items: center;
 
-  /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15); */
-  background-color: rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25); */
+  background-color: rgba(0, 0, 0, 0.3);
 
   a {
     font-size: 1.8rem;
     font-weight: 600;
   }
 `;
+
+// Search
 
 export const SearchContainer = styled.div`
   flex: 1;
@@ -42,8 +44,11 @@ export const Input = styled.input`
   width: ${(props) => (props.inSearch ? '100%' : '250px')};
 `;
 
+// Navbar Items
+
 export const Navigation = styled.nav`
   margin: 0 15px;
+  height: 100%;
 
   display: ${(props) => (props.active ? 'flex' : 'none')};
 
@@ -55,6 +60,10 @@ export const Navigation = styled.nav`
   }
 
   li {
+    & + li {
+      margin-left: 12px;
+    }
+
     a {
       position: relative;
       padding: 0 10px;
@@ -76,5 +85,17 @@ export const Navigation = styled.nav`
         width: 100%;
       }
     }
+  }
+`;
+
+// Download
+
+export const DownloadContainer = styled.div`
+  margin-left: 30px;
+
+  a {
+    padding: 12px 20px;
+    color: #000;
+    background-color: #fff;
   }
 `;
