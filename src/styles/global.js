@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
 import '~/assets/css/normalize.css';
-import '~/assets/css/responsive.css';
+// import '~/assets/css/responsive.css';
 
 export default createGlobalStyle`
   * {

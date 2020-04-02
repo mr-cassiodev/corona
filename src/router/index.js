@@ -14,7 +14,7 @@ const Routes = () => (
       <Route path="/world" component={WorldPage} />
       <Route path="/news" component={NewsPage} />
       <Route path="/local" component={MyStatePage} />
-      <Route path="/mobile" component={DownloadPage}/>
+      <Route path="/download" component={DownloadPage}/>
 
       <Redirect to="/404" />
     </Switch>
