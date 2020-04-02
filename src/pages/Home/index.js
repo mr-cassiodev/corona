@@ -10,7 +10,7 @@ const HomePage = () => (
     <Container>
       <Content>
         <h1>CORONAVÍRUS</h1>
-        <p>COVID-19</p>
+        <span>COVID-19</span>
         <ButtonsContainer>
           <Link to="/registrations">Selecionar Estado</Link>
         </ButtonsContainer>
@@ -18,5 +18,4 @@ const HomePage = () => (
     </Container>
   </Layout>
 );
-
 export default HomePage;
