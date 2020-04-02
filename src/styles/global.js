@@ -12,7 +12,6 @@ export default createGlobalStyle`
   }
 
   body {
-    font: 1.6rem 'Montserrat', sans-serif;
-    background-color: #4f5359;
+    font: 1.6rem 'Roboto Condensed', sans-serif;
   }
 `;
