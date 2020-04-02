@@ -6,7 +6,7 @@ import { IoMdArrowRoundBack } from 'react-icons/io';
 
 import { Container, Header, HeaderCredits, Content } from './styles';
 
-const DefaulLayout = ({ children }) => (
+const InformationLayout = ({ children }) => (
   <Container>
     <Header>
       <Link to="/">
@@ -15,7 +15,16 @@ const DefaulLayout = ({ children }) => (
 
       <HeaderCredits>
         <strong>
-          Powred by <span>SweetCode</span>
+          Powred by{' '}
+          <span>
+            <a
+              href="https://discord.gg/wbVrB2S"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              SweetCode
+            </a>
+          </span>
         </strong>
       </HeaderCredits>
     </Header>
@@ -24,8 +33,8 @@ const DefaulLayout = ({ children }) => (
   </Container>
 );
 
-DefaulLayout.propTypes = {
+InformationLayout.propTypes = {
   children: PropTypes.element.isRequired,
 };
 
-export default DefaulLayout;
+export default InformationLayout;
