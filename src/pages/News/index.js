@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Layout from '~/layouts/Default';
+import Layout from '~/layouts/Informations'
 
 import { Container, Content } from './styles';
 
