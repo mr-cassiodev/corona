@@ -2,11 +2,9 @@ import React from 'react';
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 
 import HomePage from '~/pages/Home';
-import WorldPage from '~/pages/World';
-import NewsPage from '~/pages/News';
 import MyStatePage from '~/pages/MyState';
-
-
+import NewsPage from '~/pages/News';
+import WorldPage from '~/pages/World';
 
 const Routes = () => (
   <BrowserRouter>
