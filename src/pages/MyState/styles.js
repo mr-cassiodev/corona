@@ -16,6 +16,7 @@ export const Content = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: 'Roboto Condensed', sans-serif;
 
 
   h1 {
