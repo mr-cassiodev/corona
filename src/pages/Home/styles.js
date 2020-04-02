@@ -23,13 +23,14 @@ export const Content = styled.div`
   margin: 0 auto;
 
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 
   h1 {
     font-size: 5.6rem;
     text-align: center;
   }
+
   span {
     color: #ed3124;
   }
@@ -39,22 +40,38 @@ export const ButtonsContainer = styled.div`
   margin-top: 70px;
 
   a {
-    padding: 15px 30px;
+    display: flex;
+    position: relative;
+    z-index: 2;
+
+    align-items: center;
+    justify-content: center;
 
     font-size: 2.2rem;
     font-weight: 600;
 
-    color: #fff;
-    background-color: #006daa;
-    box-shadow: 0px 14px 17px 3px rgba(0, 0, 0, 0.4);
-    transition: filter 400ms;
-
-    & + a {
-      margin-left: 30px;
+    svg {
+      margin-left: 6px;
     }
 
-    :hover {
-      filter: brightness(80%);
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      width: 40%;
+      height: 100%;
+      top: 50%;
+      left: -20px;
+
+      transform: translateY(-50%);
+      padding: 20px 0;
+      border-radius: 40px;
+      background-color: #0353a4;
+      transition: width 300ms;
+    }
+
+    &:hover:before {
+      width: calc(100% + 40px);
     }
   }
 `;
